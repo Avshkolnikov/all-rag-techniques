@@ -5,9 +5,9 @@ Read this in your preferred language:
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/) [![Nebius AI](https://img.shields.io/badge/Nebius%20AI-API-brightgreen)](https://cloud.nebius.ai/services/llm-embedding) [![OpenAI](https://img.shields.io/badge/OpenAI-API-lightgrey)](https://openai.com/) [![Medium](https://img.shields.io/badge/Medium-Blog-black?logo=medium)](https://medium.com/@fareedkhandev/testing-every-rag-technique-to-find-the-best-094d166af27f)
 
-This repository takes a clear, hands-on approach to **Retrieval-Augmented Generation (RAG)**, breaking down advanced techniques into straightforward, understandable implementations. Instead of relying on frameworks like `LangChain` or `FAISS`, everything here is built using familiar Python libraries `openai`, `numpy`, `matplotlib`, and a few others.
+Это хранилище использует четкий, практический подход к **Retrieval-Augmented Generation (RAG)**, разбивая передовые методы на простые, понятные реализации. Вместо того, чтобы полагаться на такие рамки, как `LangChain` or `FAISS`, все здесь построено с использованием знакомых библиотек Python `openai`, `numpy`, `matplotlib`, и несколько других.
 
-The goal is simple: provide code that is readable, modifiable, and educational. By focusing on the fundamentals, this project helps demystify RAG and makes it easier to understand how it really works.
+Цель проста: создать код, который был бы удобочитаемым, модифицируемым и образовательным. Уделяя особое внимание основам, этот проект помогает развеять мистификацию RAG и облегчает понимание того, как он работает на самом деле.
 
 ## Update: 📢
 
@@ -18,41 +18,41 @@ The goal is simple: provide code that is readable, modifiable, and educational. 
 
 ## 🚀 What's Inside?
 
-This repository contains a collection of Jupyter Notebooks, each focusing on a specific RAG technique.  Each notebook provides:
+Этот репозиторий содержит коллекцию записных Jupyter Notebooks, каждая из которых посвящена определенной технике RAG.  Каждая Notebooks содержит:
 
-- A concise explanation of the technique.
-- A step-by-step implementation from scratch.
-- Clear code examples with inline comments.
-- Evaluations and comparisons to demonstrate the technique's effectiveness.
-- Visualization to visualize the results.
+- Краткое объяснение техники.
+- Пошаговую реализацию с нуля.
+- Понятные примеры кода со встроенными комментариями.
+- Оценки и сравнения для демонстрации эффективности методики.
+- Визуализация для наглядного представления результатов.
 
-Here's a glimpse of the techniques covered:
+Вот краткий обзор рассмотренных методик:
 
 | Notebook                                      | Description                                                                                                                                                         |
 | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [1. Simple RAG](01_simple_rag.ipynb)           | A basic RAG implementation.  A great starting point!                                                                                                       |
-| [2. Semantic Chunking](02_semantic_chunking.ipynb) | Splits text based on semantic similarity for more meaningful chunks.                                                                                           |
-| [3. Chunk Size Selector](03_chunk_size_selector.ipynb) | Explores the impact of different chunk sizes on retrieval performance.                                                                                    |
-| [4. Context Enriched RAG](04_context_enriched_rag.ipynb) | Retrieves neighboring chunks to provide more context.                                                                                                     |
-| [5. Contextual Chunk Headers](05_contextual_chunk_headers_rag.ipynb) | Prepends descriptive headers to each chunk before embedding.                                                                                                |
-| [6. Document Augmentation RAG](06_doc_augmentation_rag.ipynb) | Generates questions from text chunks to augment the retrieval process.                                                                                           |
-| [7. Query Transform](07_query_transform.ipynb)   | Rewrites, expands, or decomposes queries to improve retrieval.  Includes **Step-back Prompting** and **Sub-query Decomposition**.                                      |
-| [8. Reranker](08_reranker.ipynb)               | Re-ranks initially retrieved results using an LLM for better relevance.                                                                                       |
-| [9. RSE](09_rse.ipynb)                         | Relevant Segment Extraction:  Identifies and reconstructs continuous segments of text, preserving context.                                                   |
-| [10. Contextual Compression](10_contextual_compression.ipynb) | Implements contextual compression to filter and compress retrieved chunks, maximizing relevant information.                                                 |
-| [11. Feedback Loop RAG](11_feedback_loop_rag.ipynb) | Incorporates user feedback to learn and improve RAG system over time.                                                                                      |
-| [12. Adaptive RAG](12_adaptive_rag.ipynb)     | Dynamically selects the best retrieval strategy based on query type.                                                                                          |
-| [13. Self RAG](13_self_rag.ipynb)             | Implements Self-RAG, dynamically decides when and how to retrieve, evaluates relevance, and assesses support and utility.                                        |
-| [14. Proposition Chunking](14_proposition_chunking.ipynb) | Breaks down documents into atomic, factual statements for precise retrieval.                                                                                      |
-| [15. Multimodel RAG](15_multimodel_rag.ipynb)   | Combines text and images for retrieval, generating captions for images using LLaVA.                                                                  |
-| [16. Fusion RAG](16_fusion_rag.ipynb)         | Combines vector search with keyword-based (BM25) retrieval for improved results.                                                                                |
-| [17. Graph RAG](17_graph_rag.ipynb)           | Organizes knowledge as a graph, enabling traversal of related concepts.                                                                                        |
-| [18. Hierarchy RAG](18_hierarchy_rag.ipynb)        | Builds hierarchical indices (summaries + detailed chunks) for efficient retrieval.                                                                                   |
-| [19. HyDE RAG](19_HyDE_rag.ipynb)             | Uses Hypothetical Document Embeddings to improve semantic matching.                                                                                              |
-| [20. CRAG](20_crag.ipynb)                     | Corrective RAG: Dynamically evaluates retrieval quality and uses web search as a fallback.                                                                           |
-| [21. Rag with RL](21_rag_with_rl.ipynb)                     | Maximize the reward of the RAG model using Reinforcement Learning.                                                                           |
-| [Best RAG Finder](best_rag_finder.ipynb)     | Finds the best RAG technique for a given query using Simple RAG + Reranker + Query Rewrite.                                                                        |
-| [22. Big Data with Knowledge Graphs](22_Big_data_with_KG.ipynb) | Handles large datasets using Knowledge Graphs.                                                                                                                     |
+| [1. Simple RAG](01_simple_rag.ipynb)           | Базовая реализация RAG.  Отличная отправная точка!                                                                                                      |
+| [2. Semantic Chunking](02_semantic_chunking.ipynb) | Разбивает текст на основе семантического сходства на более значимые фрагменты.                                                                                          |
+| [3. Chunk Size Selector](03_chunk_size_selector.ipynb) | Исследуется влияние различных размеров фрагментов на производительность поиска.                                                                                    |
+| [4. Context Enriched RAG](04_context_enriched_rag.ipynb) | Извлекает соседние фрагменты, чтобы предоставить больше контекста.                                                                                                     |
+| [5. Contextual Chunk Headers](05_contextual_chunk_headers_rag.ipynb) | Добавляет описательные заголовки к каждому фрагменту перед внедрением.                                                                                                |
+| [6. Document Augmentation RAG](06_doc_augmentation_rag.ipynb) | Генерирует вопросы из фрагментов текста, чтобы ускорить процесс поиска.                                                                                           |
+| [7. Query Transform](07_query_transform.ipynb)   | Переписывает, расширяет или декомпозирует запросы для улучшения поиска.  Включает в себя ** Пошаговый запрос ** и ** Декомпозицию подзапросов**.                                      |
+| [8. Reranker](08_reranker.ipynb)               | Повторно ранжирует первоначально полученные результаты с помощью LLM для повышения их релевантности.                                                                                       |
+| [9. RSE](09_rse.ipynb)                         | Извлечение релевантных сегментов:  Идентифицирует и реконструирует непрерывные сегменты текста, сохраняя контекст.                                                  |
+| [10. Contextual Compression](10_contextual_compression.ipynb) | Реализует контекстуальное сжатие для фильтрации и сжатия извлеченных фрагментов, максимизируя релевантную информацию.                                                |
+| [11. Feedback Loop RAG](11_feedback_loop_rag.ipynb) | Учитывает отзывы пользователей для изучения и совершенствования системы RAG с течением времени.                                                                                      |
+| [12. Adaptive RAG](12_adaptive_rag.ipynb)     | Динамически выбирает наилучшую стратегию поиска в зависимости от типа запроса.                                                                                         |
+| [13. Self RAG](13_self_rag.ipynb)             | Реализует SelfRAG, динамически решает, когда и как извлекать данные, оценивает релевантность, а также поддержку и полезность.                                        |
+| [14. Proposition Chunking](14_proposition_chunking.ipynb) | Разбивает документы на атомарные, фактические утверждения для точного поиска.                                                                                      |
+| [15. Multimodel RAG](15_multimodel_rag.ipynb)   | Объединяет текст и изображения для поиска, создавая подписи к изображениям с помощью Lava.                                                                  |
+| [16. Fusion RAG](16_fusion_rag.ipynb)         | Сочетает векторный поиск с поиском по ключевым словам (BM25) для улучшения результатов.                                                                                |
+| [17. Graph RAG](17_graph_rag.ipynb)           | Упорядочивает знания в виде графа, позволяя просматривать связанные понятия.                                                                                        |
+| [18. Hierarchy RAG](18_hierarchy_rag.ipynb)        | Создает иерархические индексы (сводки + подробные фрагменты) для эффективного поиска.                                                                                   |
+| [19. HyDE RAG](19_HyDE_rag.ipynb)             | Использует вложения в гипотетические документы для улучшения семантического соответствия.                                                                                              |
+| [20. CRAG](20_crag.ipynb)                     | Корректирующий RAG: динамически оценивает качество поиска и использует веб-поиск в качестве запасного варианта.                                                                           |
+| [21. Rag with RL](21_rag_with_rl.ipynb)                     | Максимизируйте вознаграждение за модель RAG, используя обучение с подкреплением.                                                                           |
+| [Best RAG Finder](best_rag_finder.ipynb)     | Находит наилучший метод RAG для данного запроса, используя простой RAG + Reranker + Rewrite запроса.                                                                        |
+| [22. Big Data with Knowledge Graphs](22_Big_data_with_KG.ipynb) | Обрабатывает большие наборы данных с помощью графов знаний.                                                                                                                     |
 
 ## 🗂️ Repository Structure
 
@@ -128,27 +128,27 @@ fareedkhan-dev-all-rag-techniques/
 
 4. **Run the notebooks:**
 
-    Open any of the Jupyter Notebooks (`.ipynb` files) using Jupyter Notebook or JupyterLab.  Each notebook is self-contained and can be run independently.  The notebooks are designed to be executed sequentially within each file.
+    Откройте любой из блокнотов Jupyter (файлы `.ipynb`) с помощью Jupyter Notebook или JupyterLab.  Каждый блокнот является автономным и может запускаться независимо.  Блокноты предназначены для последовательного запуска в каждом файле.
 
-    **Note:** The `data/AI_Information.pdf` file provides a sample document for testing. You can replace it with your own PDF.  The `data/val.json` file contains sample queries and ideal answers for evaluation.
-    The 'attention_is_all_you_need.pdf' is for testing Multi-Modal RAG Notebook.
+    **Примечание:** Файл `data/AI_Information.pdf` содержит образец документа для тестирования. Вы можете заменить его своим собственным PDF-файлом.  Файл `data/val.json` содержит примеры запросов и идеальные ответы для оценки.
+    Файл "attention_is_all_you_need.pdf" предназначен для тестирования мультимодального блокнота RAG.
 
-## 💡 Core Concepts
+## 💡 Основные концепции
 
-- **Embeddings:**  Numerical representations of text that capture semantic meaning.  We use Nebius AI's embedding API and, in many notebooks, also the `BAAI/bge-en-icl` embedding model.
+- ** Embeddings: ** Числовое представление текста, которое отражает семантический смысл.  Мы используем API для встраивания Nebius AI и, во многих ноутбуках, также модель встраивания "BAAI/bge-en-icl".
 
-- **Vector Store:**  A simple database to store and search embeddings.  We create our own `SimpleVectorStore` class using NumPy for efficient similarity calculations.
+- **Хранилище векторов: Vector Store:** Простая база данных для хранения и поиска вложений.  Мы создаем наш собственный класс SimpleVectorStore, используя NumPy для эффективного вычисления подобия.
 
-- **Cosine Similarity:**  A measure of similarity between two vectors.  Higher values indicate greater similarity.
+- **Косинусное сходство: Cosine Similarity:** Мера сходства между двумя векторами.  Более высокие значения указывают на большее сходство.
 
-- **Chunking:**  Dividing text into smaller, manageable pieces.  We explore various chunking strategies.
+- ** Разбиение текста на фрагменты: Chunking:** Разделение текста на более мелкие, удобные для восприятия фрагменты.  Мы изучаем различные стратегии разбиения текста на фрагменты.
 
-- **Retrieval:** The process of finding the most relevant text chunks for a given query.
+- **Извлечение: Retrieval:** Процесс поиска наиболее релевантных фрагментов текста для данного запроса.
 
-- **Generation:**  Using a Large Language Model (LLM) to create a response based on the retrieved context and the user's query.  We use the `meta-llama/Llama-3.2-3B-Instruct` model via Nebius AI's API.
+- **Генерация: Generation:** Использование большой языковой модели (LLM) для создания ответа на основе полученного контекста и запроса пользователя.  Мы используем модель "meta-llama/Llama-3.2-3B-Instruct" через API Nebius AI.
 
-- **Evaluation:**  Assessing the quality of the RAG system's responses, often by comparing them to a reference answer or using an LLM to score relevance.
+- **Оценка: Evaluation:** Оценка качества ответов системы RAG, часто путем сравнения их с эталонными ответами или с помощью LLM для оценки значимости.
 
-## 🤝 Contributing
+## 🤝 Внесение вклада
 
-Contributions are welcome!
+Приветствуются вклады!
