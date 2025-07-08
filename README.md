@@ -1,4 +1,4 @@
-# All RAG Techniques: A Simpler, Hands-On Approach ✨
+# Все Техники RAG: Простой, Практический Подход ✨
 
 Read this in your preferred language:  
 [Deutsch](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=de) |  [Español](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=es) |  [Français](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=fr) |  [日本語](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=ja) |  [한국어](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=ko) |  [Português](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=pt) | [Русский](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=ru) |  [中文](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=zh)
